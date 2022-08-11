@@ -173,8 +173,8 @@ The atomic predicates used during the test should also be normalized with their 
 of an atomic predicate is the highest magnitude robustness value that is possible for that predicate, or a reasonable
 approximation of that value. Formally, if the robustness interval for some predicate is found to be within _[a, b]_,
 then the bound would be **max(|_a_|,|_b_|)**. If the robustness interval is unknown, then the magnitude of the
-difference of the input range can be used. Formally, if the input range is _[c, d]_, then the bound would be **|*d* - *
-c*|**.
+difference of the input range can be used. Formally, if the input range is _[c, d]_, then the bound would be 
+**|_d_ - _c_|**.
 
 **Note**: The atomic predicates are stored in the `preds` struct that is passed into the `athena` function. Refer to the
 `help` documentation regarding the `athena` function using `help athena` for more information on this structure.
