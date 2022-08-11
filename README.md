@@ -74,9 +74,7 @@ The ATheNA toolbox includes the following functions and features:
   inputs, refer to the MATLAB `help` function documentation by entering the following to the MATLAB Command Window:
     ```matlab
     % Usage structure:
-    % [Results, History, Opt] = ...
-    % athena(model,init_cond,input_range,cp_array,phi,preds,...
-    % TotSimTime,athena_opt);
+    % [Results, History, Opt] = athena(model,init_cond,input_range,cp_array,phi,preds,TotSimTime,athena_opt);
     help athena
     ```
 
