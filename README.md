@@ -20,15 +20,12 @@ S-TaLiRo for ATheNA Usage_](#setting-up-s-taliro-for-athena-usage).
 
 ATheNA requires a copy of the S-TaLiRo toolbox, with the *staliro* folder location added to the MATLAB path. The
 S-TaliRo toolbox can be downloaded from the following link:
-[https://sites.google.com/a/asu.edu/s-taliro/s-taliro/download](https://sites.google.com/a/asu.edu/s-taliro/s-taliro/download)
-.
+[https://sites.google.com/a/asu.edu/s-taliro/s-taliro/download](https://sites.google.com/a/asu.edu/s-taliro/s-taliro/download).
 
 Note that a MEX compiler is required to use S-TaLiRo, and that MEX files should be compiled before using ATheNA. For
 more information on supported compilers, refer to the MATLAB documentation on supported compilers in the following link:
-[https://www.mathworks.com/support/requirements/supported-compilers.html](https://www.mathworks.com/support/requirements/supported-compilers.html)
-. To change the default compiler, refer to the MATLAB documentation in the following link:
-[https://www.mathworks.com/help/matlab/matlab_external/changing-default-compiler.html](https://www.mathworks.com/help/matlab/matlab_external/changing-default-compiler.html)
-.
+[https://www.mathworks.com/support/requirements/supported-compilers.html](https://www.mathworks.com/support/requirements/supported-compilers.html). To change the default compiler, refer to the MATLAB documentation in the following link:
+[https://www.mathworks.com/help/matlab/matlab_external/changing-default-compiler.html](https://www.mathworks.com/help/matlab/matlab_external/changing-default-compiler.html).
 
 ### Additional MathWorks Toolboxes and Products
 
