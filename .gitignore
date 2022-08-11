@@ -1,0 +1,10 @@
+# ignore the Example, html, doc directories
+/Example
+/html
+/doc
+
+# ignore all XML files
+*.xml
+
+#ignore all MATLAB Live Scripts (.mlx)
+*.mlx
