@@ -123,7 +123,7 @@ fitness = 1;
 end
 ```
 
-The function should output a fitness value in the range _[-1,1]_, where -1 is the most desirable fitness. For more
+The function should output a fitness value in the range $[-1,1]$, where -1 is the most desirable fitness. For more
 information on creating manual fitness functions refer to the MATLAB `help` function documentation by
 calling `help createManualFitness`.
 
@@ -160,14 +160,14 @@ To correctly combine the manual fitness value with the automatic fitness, the `a
 set to the intended weight for the automatic fitness. This weight must be a value in the range $[0, 1]$, where 0
 signifies using the manual fitness only, and 1 signifies using the automatic fitness only. Any value
 of `athena_options.coeffRob` inside the range corresponds to a value $p$ used to calculate the combined fitness
-$f_{Athena}$ with the weighted average formula below:
+$f_{athena}$ with the weighted average formula below:
 
-$fitness_Athena = fitness_automatic * p + fitness_manual * (1 - p)$
+$$f_{athena} = f_{automatic} \cdot p + f_{manual} \codt (1 - p)$$
 
 The atomic predicates used during the test should also be normalized with their normalization bounds defined. The bound
 of an atomic predicate is the highest magnitude robustness value that is possible for that predicate, or a reasonable
 approximation of that value. Formally, if the robustness interval for some predicate is found to be within $[a, b]$,
-then the bound would be $\max(|a|,|b|). If the robustness interval is unknown, then the magnitude of the
+then the bound would be $\max(|a|,|b|)$. If the robustness interval is unknown, then the magnitude of the
 difference of the input range can be used. Formally, if the input range is $[c, d]$, then the bound would be 
 $|d - c|$.
 
