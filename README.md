@@ -162,7 +162,7 @@ signifies using the manual fitness only, and 1 signifies using the automatic fit
 of `athena_options.coeffRob` inside the range corresponds to a value $p$ used to calculate the combined fitness
 $f_{athena}$ with the weighted average formula below:
 
-$$f_{athena} = f_{automatic} \cdot p + f_{manual} \codt (1 - p)$$
+$$f_{athena} = f_{automatic} \cdot p + f_{manual} \cdot (1 - p)$$
 
 The atomic predicates used during the test should also be normalized with their normalization bounds defined. The bound
 of an atomic predicate is the highest magnitude robustness value that is possible for that predicate, or a reasonable
