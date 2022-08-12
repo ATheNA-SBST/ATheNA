@@ -5,8 +5,12 @@ fitness functions to search for failure-revealing test cases. On one hand, the a
 using S-TaLiRo directly from the requirement under analysis. On the other hand, the manual fitness function must be
 written by the user employing their domain knowledge and expertise on the model.
 
-The replication and results files will be available soon in another branch for RQ1-RQ2, and a separate repository for
-RQ3.
+The replication and results files used in the [ATheNA paper](https://arxiv.org/abs/2207.11016) are available:
+
+* In the branch RQ1-RQ2, for the results of Research Question 1 and 2 of the paper (Section 5.1 and 5.2 respectively)
+* In the branch RQ3, for the results of Research Question 3 of the paper (Section 5.3)
+
+**Note**: RQ3 requires a separate version of ATheNA due to some properties of the model. Please use the scripts contained in that branch.
 
 ## Installation
 
