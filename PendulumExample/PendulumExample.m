@@ -59,7 +59,7 @@ c = 0.0125;     % Pendulum torsional damping [kg*m^2/s]
 % property by entering 'help athena_options.coeffRob' into the MATLAB
 % Command Window.
 
-model = 'pendulum_model_2016a'; % Model name
+model = 'pendulum_model_2015a'; % Model name
 
 % Initial conditions (if left empty, the ones from the model will be
 % considered)
