@@ -6,7 +6,7 @@
 % and script used in this tutorial is packaged with the toolbox and is
 % located in this folder.
 %% Script and Model Description 
-% The Simulink model pendulum_model_2012a is a single pendulum tied to a
+% The Simulink model pendulum_model_2015a is a single pendulum tied to a
 % string that has a repeated torque applied to it via a motor. The length
 % of the string (len), mass of the object (m), gravitational acceleration
 % (g), and the pendulum's torsional damping (c) can all be modified. The
