@@ -1,4 +1,5 @@
 function updateStaliroCode(dest_absolute)
+warning off MATLAB:RMDIR:RemovedFromPath;
 new_file_loc = which('updateStaliroCode.m');
 [new_file_loc, ~] = fileparts(new_file_loc);
 cd(strcat(dest_absolute));
@@ -32,5 +33,6 @@ end
 cd(new_file_loc);
 copyfile(strcat(new_file_loc,filesep,robustness_files{ii}), strcat(dest_absolute,filesep,'auxiliary'));
 fprintf('Successfully replaced %s in %s%cauxiliary.\n', robustness_files{ii},dest_absolute,filesep);
+warning on MATLAB:RMDIR:RemovedFromPath;
 end
 end
