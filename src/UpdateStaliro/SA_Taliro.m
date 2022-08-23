@@ -1,4 +1,4 @@
-% SA_Taliro - Performs stochastic optimization using Simulated Annealing
+% SA_Taliro ** MODIFIED ** - Performs stochastic optimization using Simulated Annealing
 % with hit and run Monte Carlo sampling where the cost function is the
 % robustness of a Metric Temporal Logic formula. 
 % 

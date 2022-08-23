@@ -37,6 +37,8 @@ if nargin == 0
     [staliro_file_loc,~] = fileparts(staliro_file_loc);
 end
 cur_dir = pwd;
+addpath(genpath('UpdateStaliro'))
 updateStaliroCode(staliro_file_loc);
 cd(cur_dir);
+rmpath(genpath('UpdateStaliro'))
 end
