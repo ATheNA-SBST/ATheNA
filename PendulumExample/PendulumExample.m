@@ -9,7 +9,7 @@
 % The Simulink model pendulum_model_2015a is a single pendulum tied to a
 % string that has a repeated torque applied to it via a motor. The length
 % of the string (len), mass of the object (m), gravitational acceleration
-% (g), and the pendulum's torsional damping (c) can all be modified. The
+% (g), and the motor's torsional damping (c) can all be modified. The
 % requirement, which is that the pendulum does not exceed a rotation beyond
 % pi/3 radians in either direction, is being falsified using ATheNA. The
 % motor's angular acceleration serves as the input to the model, and the
@@ -19,7 +19,7 @@
 % athena function. The model parameter variables g, m, len, and c must be
 % defined by the user.
 %
-% NOTE: The model is saved as a Simulink version 7.14 (R2012a) model. If
+% NOTE: The model is saved as a Simulink version 8.5 (R2015a) model. If
 % this model is not supported by your MATLAB version, save the model as a
 % version compatible with your device.
 %
@@ -114,8 +114,8 @@ athena_opt.interpolationtype = {'pchip'};
 % property)
 athena_opt.fals_at_zero = 0;
 
-% Set parameters for optimization algorithm (inherited staliro_options
-% property)
+% Set maximum number of tests to conduct for each run (inherited 
+% staliro_options property)
 athena_opt.optim_params.n_tests = 70;
 
 % Set the coefficient of robustness for combining the automatic and manual
