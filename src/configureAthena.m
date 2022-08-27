@@ -37,10 +37,6 @@ if nargin == 0
     [staliro_file_loc,~] = fileparts(staliro_file_loc);
 end
 cur_dir = pwd;
-folder_loc = which('configureAthena.m');
-[folder_loc,~] = fileparts(folder_loc);
-addpath(genpath(strcat(folder_loc,filesep,'UpdateStaliro')));
 updateStaliroCode(staliro_file_loc);
 cd(cur_dir);
-rmpath(genpath(strcat(folder_loc,filesep,'UpdateStaliro')));
 end
