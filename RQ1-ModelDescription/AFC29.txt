@@ -1,0 +1,21 @@
+AFC is a benchmark representing the automatic Air-to-Fuel Controller for an Internal Combustion Engine of a car. It was developed by Toyota in 2014.
+It receives as input the engine speed and the throttle (pedal angle) and evaluates the error in the air-to-fuel ratio, driving mode (either 0 or 1) and the throttle (equal to the input signal).
+
+This system has been designed to simulate the Air-to-Fuel Controller of a car and test its output against a reference value. The error between the reference and real Air-to-Fuel ratio is the must important parameter, as it has to remain below a certain threshold.
+The system has difficulties at computing the right ratio especially at low speeds, when the throttle is very low.
+
+Requirement AFC29: Between 11 and 50 s from the start of the simulation, the air-to-fuel ration error must be below 0.007. The threshold is bot positive and negative, since we consider the absolute value of the error.
+
+Simulation conditions:
+
+	Input 1: Engine speed
+		Range: 900 - 1100
+		Control Points: 1
+		Interpolation function: constant signal
+
+	Input 2: Throttle
+		Range: 0 - 61.2
+		Control Points: 10
+		Interpolation function: piecewise constant
+
+	Simulation time: 50 s

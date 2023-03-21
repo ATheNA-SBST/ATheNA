@@ -1,0 +1,19 @@
+SC is a benchmark representing a Neural-Network controlled Steam Condenser.
+It receives as input the mass flow rate of steam entering in the condenser, and evaluates:
+	1. the hot water temperature
+	2. the flow rate of the cooling water
+	3. the heat exchanged
+	4. the hot water pressure.
+
+The condenser uses a Recurrent Neural Network that controls the cooling water flow rate to keep the pressure always around 87.2 kPa. Any sudden change to the steam flow rate gets slowly compensated by the controller that brings back the pressure to the ideal level.
+
+Requirement SC: Between 30 and 35 s, the pressure must remain between 87 and 87.5 kPa.
+
+Simulation conditions:
+
+	Input 1: Steam mass flow rate
+		Range: 3.98 - 4.02
+		Control Points: 20
+		Interpolation function: cubic spline
+
+	Simulation time: 35 s

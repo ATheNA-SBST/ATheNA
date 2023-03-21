@@ -1,0 +1,23 @@
+AT is a benchmark representing the Automatic Transmission of a car.
+It receives as input the throttle and brake signals from the driver and evaluates:
+	1. the vehicle speed
+	2. engine speed
+	3. current gear (1 to 4)
+
+Since the relation between input and outputs of this model is intuitive and well-known, no other detail will be provided on the model.
+
+Requirement AT1: In the first 20 seconds, the vehicle speed must always be below 120 km/h.
+
+Simulation conditions:
+
+	Input 1: Throttle
+		Range: 0 - 110
+		Control Points: 7
+		Interpolation function: cubic spline
+
+	Input 2: Brake
+		Range: 0 - 100
+		Control Points: 3
+		Interpolation function: cubic spline
+
+	Simulation time: 50 s

@@ -1,0 +1,21 @@
+CC is a benchmark representing 5 Chasing Cars on a straight road.
+It receives as input the throttle and brake signals for the driver of car 1 (the last of the line), and evaluates the relative position of all the 5 vehicles.
+
+All the cars start with a distance of 10 m from both the vehicle in front of them and behind them. The drivers of all the cars act in way to maintain the distance constant to the vehicle behind them (they don't care about the vehicle in front of them). A driver will accelerate if the distance drops below 5 m and brake if it is greater than 20 m.
+The forward acceleration and deceleration are small, so it takes some time for the drivers decision to affect the system behaviour.
+
+Requirement CCX: In the first 50 seconds, the distance between all consecutive pairs of cars must be above 7.5 m.
+
+Simulation conditions:
+
+	Input 1: Car 1 throttle
+		Range: 0 - 1
+		Control Points: 7
+		Interpolation function: cubic spline
+
+	Input 2: Car 1 brake
+		Range: 0 - 1
+		Control Points: 3
+		Interpolation function: cubic spline
+
+	Simulation time: 100 s

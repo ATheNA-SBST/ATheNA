@@ -1,0 +1,21 @@
+WT is a benchmark representing a Wind Turbine.
+It receives as input the wind speed hitting frontally the turbine and evaluates:
+	1. Demanded blade pitch angle.
+	2. Mode of operation.
+	3. Torque acting on the blade.
+	4. Speed of the generator in RPM.
+	5. Speed of the turbine rotor in RPM.
+	6. Actual blade pitch angle.
+
+The model is comprised of the Wind Turbine, the generator group attached to the turbine rotor and a controller that regulates the blades pitch angle to avoid excessive torque values on the turbine. If there is high wind speed, the controller lowers the blade pitch angle to avoid excessive loads on the blade and on the rotor. If there is low wind speed, the controller increase the blade pitch angle to increase the torque and generator speed, thus producing more power.
+
+Requirement WT3: Between 30 and 630 s, the rotor speed must be always lower than 14.3.
+
+Simulation conditions:
+
+	Input 1: Wind speed
+		Range: 8 - 16
+		Control Points: 126
+		Interpolation function: cubic spline
+
+	Simulation time: 630 s

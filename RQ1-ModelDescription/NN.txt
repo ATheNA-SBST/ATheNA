@@ -1,0 +1,17 @@
+NN is a benchmark representing the a permanent magnet that levitates thanks to an electro-magnet
+It receives as input the desired position of the magnet and evaluates
+	1. the position error of the magnet (depending on reference position and actual position).
+	2. the actual position of the magnet
+
+The electromagnet is controlled by a NARMA-L2 controller. The most critical positions are the ones near the extremities of the domain, far from the midway point at 2.
+
+Requirement NN: If the positioning error gets above a given threshold, than it will have to remain under the threshold for at least 2 consecutive seconds of the next 3 s.
+
+Simulation conditions:
+
+	Input: Magnet reference position
+		Range: 1 - 3
+		Control Points: 3
+		Interpolation function: cubic spline
+
+	Simulation time: 40 s
