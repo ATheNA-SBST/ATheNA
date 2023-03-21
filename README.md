@@ -6,7 +6,7 @@ using S-TaLiRo directly from the requirement under analysis. On the other hand, 
 written by the user employing their domain knowledge and expertise on the model.
 
 The replication package for the paper submitted to Transactions On Software Engineering and Methodologies (TOSEM) is in the branch *TOSEM*.  
-Please, download Athena from the *main* brancha and follow the installation instructions below to replicate the proposed results.  
+Please, download Athena from the *main* branch and follow the installation instructions below to replicate the proposed results.  
 
 
 
