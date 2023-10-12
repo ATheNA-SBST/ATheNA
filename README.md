@@ -211,20 +211,24 @@ model will not run, but the rest of the toolbox will remain compatible.
 
 ## How to Cite ATheNA
 
-To cite ATheNA, please visit [https://arxiv.org/abs/2207.11016](https://arxiv.org/abs/2207.11016). Alternatively, the 
+To cite ATheNA, please visit [https://dl.acm.org/doi/abs/10.1145/3624745](https://dl.acm.org/doi/abs/10.1145/3624745). Alternatively, the 
 following BibTeX information can be used:
 
 ```
-@misc{https://doi.org/10.48550/arxiv.2207.11016,
-doi = {10.48550/ARXIV.2207.11016},
-url = {https://arxiv.org/abs/2207.11016},
-author = {Formica, Federico and Askarpour, Mehrnoosh and Menghi, Claudio},
-keywords = {Software Engineering (cs.SE), FOS: Computer and information sciences, FOS: Computer and information sciences},
-title = {Search-based Software Testing Driven by Automatically Generated and Manually Defined Fitness Functions},
-publisher = {arXiv},
-year = {2022},
-copyright = {arXiv.org perpetual, non-exclusive license}
+@article{ATheNA,
+author = {Formica, Federico and Fan, Tony and Menghi, Claudio},
+title = {Search-Based Software Testing Driven by Automatically Generated and Manually Defined Fitness Functions},
+year = {2023},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+doi = {10.1145/3624745},
+note = {Just Accepted},
+journal = {ACM Trans. Softw. Eng. Methodol.},
+month = {sep},
+keywords = {Fitness Functions, Falsification, Testing, CPS}
 }
+
+
 ```
 
 ## Contributors
