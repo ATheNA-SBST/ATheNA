@@ -29,7 +29,7 @@ S-TaLiRo for ATheNA Usage_](#setting-up-s-taliro-for-athena-usage).
 
 ATheNA requires a copy of the S-TaLiRo toolbox, with the *staliro* folder location added to the MATLAB path. The
 S-TaliRo toolbox can be downloaded from the following link:
-[https://sites.google.com/a/asu.edu/s-taliro/s-taliro/download](https://sites.google.com/a/asu.edu/s-taliro/s-taliro/download).
+[https://app.assembla.com/spaces/s-taliro_public/subversion/source/HEAD/trunk](https://app.assembla.com/spaces/s-taliro_public/subversion/source/HEAD/trunk).
 
 Note that a MEX compiler is required to use S-TaLiRo, and that MEX files should be compiled before using ATheNA. For
 more information on supported compilers, refer to the MATLAB documentation on supported compilers in the following link:
