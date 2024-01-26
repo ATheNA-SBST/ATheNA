@@ -149,7 +149,7 @@ athenaOpt.optim_params.n_tests = 50;
 
 % Set the coefficient of robustness for combining the automatic and manual
 % fitnesses into the ATheNA fitness.
-athenaOpt.coeffRob = 0.67;
+athenaOpt.coeffRob = 0.5;
 
 % Provide the manual fitness function. The function must exist in the path.
 % For more information on how to create a manual fitness function, refer to
