@@ -55,7 +55,16 @@ function updateStaliroCode(dest_staliro)
     end
     fprintf('The %s%c%s.m file is now in use.\n',this_location,filesep,'Compute_Robustness_Right');
 
-    % Reactivate warning fro directory deletion (if necessary)
+    % Compile the S-Taliro files
+    try
+        setup_staliro;
+    catch
+        warning(sprintf("There was an error during the Mex compilation of S-Taliro functions.\n" + ...
+            "Check the link below to make sure you have installed a compatible compiler and rerun 'configureAthena':\n" + ...
+            "\thttps://www.mathworks.com/support/requirements/supported-compilers.html\n\n"))
+    end
+
+    % Reactivate warning for directory deletion (if necessary)
     if strcmp(warnState.state,'on')
         warning on MATLAB:RMDIR:RemovedFromPath;
     end
