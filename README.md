@@ -209,6 +209,9 @@ model which is used in the example (version 8.5/R2015a), a formatted html tutori
 should look like, and a MATLAB script with the tutorial. If an older MATLAB version is used, the example script and
 model will not run, but the rest of the toolbox will remain compatible.
 
+Another example can be found inside the [AutomotiveExample](AutomotiveExample) folder. The folder includes the Simulink
+model which is used in the example (version 8.7/R2016a) and a MATLAB script with the tutorial.
+
 ## How to Cite ATheNA
 
 To cite ATheNA, please visit [https://dl.acm.org/doi/abs/10.1145/3624745](https://dl.acm.org/doi/abs/10.1145/3624745). Alternatively, the 
@@ -219,15 +222,19 @@ following BibTeX information can be used:
 author = {Formica, Federico and Fan, Tony and Menghi, Claudio},
 title = {Search-Based Software Testing Driven by Automatically Generated and Manually Defined Fitness Functions},
 year = {2023},
+issue_date = {February 2024},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
+volume = {33},
+number = {2},
+issn = {1049-331X},
+url = {https://doi.org/10.1145/3624745},
 doi = {10.1145/3624745},
-note = {Just Accepted},
 journal = {ACM Trans. Softw. Eng. Methodol.},
-month = {sep},
-keywords = {Fitness Functions, Falsification, Testing, CPS}
+month = {dec},
+articleno = {40},
+numpages = {37},
 }
-
 
 ```
 
@@ -237,4 +244,4 @@ The following authors contributed to writing this toolbox:
 
 * Federico Formica, McMaster University (Email:`formicaf at mcmaster dot ca`)
 * Mohammad Mahdi Mahboob, McMaster University (Email:`mahbom2 at mcmaster dot ca`)
-* Claudio Menghi, McMaster University (Email:`menghic at mcmaster dot ca`)
+* Claudio Menghi, University of Bergamo, McMaster University (Email:`menghic at mcmaster dot ca`)
