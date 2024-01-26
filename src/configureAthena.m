@@ -32,11 +32,24 @@
 %        % Linux path
 %        staliro_file_loc = '/home/user/staliro';
 function configureAthena(staliro_file_loc)
+
+% Get staliro folder location if not provided
 if nargin == 0
     staliro_file_loc = which('staliro_options.m');
     [staliro_file_loc,~] = fileparts(staliro_file_loc);
 end
+
+% Save current directory
 cur_dir = pwd;
-updateStaliroCode(staliro_file_loc);
+
+% Remove original S-Taliro functions that are replaced by Athena
+try
+    updateStaliroCode(staliro_file_loc);
+catch Err
+    cd(cur_dir);
+    rethrow(Err);
+end
+
+% Go back to original working directory
 cd(cur_dir);
 end
