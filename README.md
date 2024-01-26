@@ -165,13 +165,15 @@ function.
 
 ### Combining Manual and Automatic Fitness Values
 
-To correctly combine the manual fitness value with the automatic fitness, the `athena_options.coeffRob` property must be
-set to the intended weight for the automatic fitness. This weight must be a value in the range $[0, 1]$, where 0
+The Manual and Automatic Fitness values are combined linearly by default using the `athena\_options.coeffRob` property.
+This weight must be a value in the range $[0, 1]$, where 0
 signifies using the manual fitness only, and 1 signifies using the automatic fitness only. Any value
 of `athena_options.coeffRob` inside the range corresponds to a value $p$ used to calculate the combined fitness
 $f_{athena}$ with the weighted average formula below:
 
 $$f_{athena} = f_{automatic} \cdot p + f_{manual} \cdot (1 - p)$$
+
+The user can define their own implementation of the `athenaFitness` method, by modifying the function `./src/UpdateStaliro/Compute \_Robustness.m` at line 147.
 
 The atomic predicates used during the test should also be normalized with their normalization bounds defined. The bound
 of an atomic predicate is the highest magnitude robustness value that is possible for that predicate, or a reasonable
@@ -204,13 +206,14 @@ help athena_options.coeffRob
 
 ## Examples
 
-An example tutorial can be found inside the [PendulumExample](PendulumExample) folder. The folder includes the Simulink
-model which is used in the example (version 8.5/R2015a), a formatted html tutorial page with a sample of what the output
-should look like, and a MATLAB script with the tutorial. If an older MATLAB version is used, the example script and
-model will not run, but the rest of the toolbox will remain compatible.
+Two examples are provided with the tool to show how to set up and run ATheNA.\\
 
-Another example can be found inside the [AutomotiveExample](AutomotiveExample) folder. The folder includes the Simulink
-model which is used in the example (version 8.7/R2016a) and a MATLAB script with the tutorial.
+The first example can be found inside the [AutomotiveExample](AutomotiveExample) folder.
+The folder includes the Simulink model which is used in the example (version 8.7/ R2016a) and a MATLAB script with the tutorial.
+If an older MATLAB version is used, the example script and model will not run, but the rest of the toolbox should remain compatible.
+
+Another tutorial example can be found inside the [PendulumExample](PendulumExample) folder.
+The folder includes the Simulink model which is used in the example (version 8.5/ R2015a), a formatted html tutorial page with a sample of what the output should look like, and a MATLAB script with the tutorial.
 
 ## How to Cite ATheNA
 
