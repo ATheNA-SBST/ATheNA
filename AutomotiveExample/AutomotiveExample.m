@@ -37,6 +37,7 @@
 addpath(genpath('src'))
 addpath(genpath('staliro'))
 warning('off','Simulink:Logging:CannotLogStatesAsMatrix')
+rng("shuffle")
 
 %% Define Requirement
 % The requirement is defined by two variables: a char array that contains
