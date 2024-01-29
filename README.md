@@ -45,31 +45,23 @@ more information on supported compilers, refer to the MATLAB documentation on su
 
 ### Setting Up S-TaLiRo for ATheNA Usage
 
-ATheNA modifies some contents of the S-TaLiRo toolbox in order for it to run. Before a _staliro_ folder can be used for
+ATheNA modifies some contents of the S-TaLiRo toolbox for it to run. Before a _staliro_ folder can be used for
 the first time, it must be configured correctly. To configure the folder correctly, follow the steps below:
 
-1. Add the intended _staliro_ folder and its subfolders to the MATLAB path. The _staliro/benchmarks_ and _staliro/demos_
-   folders and their subfolders can be removed from the path. **If multiple _staliro_ folders exist, <u>only add the
-   folder that is intended for use with ATheNA</u>**.
+1. Download S-Taliro from its [repository](https://app.assembla.com/spaces/s-taliro_public/subversion/source/HEAD/trunk).
 
-2. Compile the S-TaLiRo MEX files by setting the current MATLAB directory to the _staliro_ folder, then entering
-   `setup_staliro` into the command line. Ensure that the correct MEX compiler is connected to MATLAB by referring to
-   the [_System Requirements_](#system-requirements) section.
+2. Unzip the folder, rename it to `staliro` (Optional), and move it inside the ATheNA repo.
 
-3. Ensure that the ATheNA toolbox folder and its subfolders are added to the MATLAB path.
+3. Ensure that the correct MEX compiler for your operating system is connected to MATLAB by referring to the online MATLAB [documentation](https://www.mathworks.com/support/requirements/supported-compilers.html).
 
-4. Run the `configureAthena` function in one of two ways (listed below):
-    1. If <u>only</u> the intended _staliro_ folder and _subfolders_ are added to the MATLAB path, `configureAthena` can
-       be run without giving any arguments.
+4. Ensure that the ATheNA toolbox folder and its subfolders are added to the MATLAB path.
 
-    2. **Safer option**: copy the full path to the _staliro_ folder location and pass it as a string or character array
-       argument into the `configureAthena` function. This guarantees that the correct staliro folder is being modified.
-       For example, if the absolute path to the folder was `C:\Users\user\Documents\staliro`, then the following line
-       would be entered for the function call:
+5. Run the `configureAthena` function by providing the relative path from the current working directory to the S-Taliro folder.
+   For example, if the current working directory is the ATheNA repository cloned from GitHub and the folder containing S-Taliro has been renamed to `staliro`, then the command is the following:
 
-       ```matlab
-       configureAthena('C:\Users\user\Documents\staliro')
-       ```
+```matlab
+configureAthena('staliro')
+```
 
 ## Features
 
