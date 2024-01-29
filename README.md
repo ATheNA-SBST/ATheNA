@@ -10,7 +10,7 @@ Please, download Athena from the *main* branch and follow the installation instr
 
 
 
-The replication and results files used in the [ATheNA paper](https://arxiv.org/abs/2207.11016) on arXiv are available:
+The replication and results files used in the [ATheNA paper](https://dl.acm.org/doi/abs/10.1145/3624745) on ACM Transaction on Software Engineering and Methodology are available:
 
 * In the branch *RQ1-RQ2*, for the results of Research Question 1 and 2 of the paper (Section 5.1 and 5.2 respectively)
 * In the branch *RQ3*, for the results of Research Question 3 of the paper (Section 5.3)
@@ -22,6 +22,8 @@ The replication and results files used in the [ATheNA paper](https://arxiv.org/a
 To install the toolbox, clone this repository to the intended system and add all folders to the MATLAB path. Then,
 follow all the requirements and instructions listed in [_System Requirements_](#system-requirements) and [_Setting Up
 S-TaLiRo for ATheNA Usage_](#setting-up-s-taliro-for-athena-usage).
+
+A step-by-step installation guide is also available on [YouTube](https://www.youtube.com/watch?v=F8hhTQ8nLts)
 
 ## System Requirements
 
@@ -210,7 +212,8 @@ Two examples are provided with the tool to show how to set up and run ATheNA.\\
 
 The first example can be found inside the [AutomotiveExample](AutomotiveExample) folder.
 The folder includes the Simulink model which is used in the example (version 8.7/ R2016a) and a MATLAB script with the tutorial.
-If an older MATLAB version is used, the example script and model will not run, but the rest of the toolbox should remain compatible.
+If an older MATLAB version is used, the example script and model will not run, but the rest of the toolbox should remain compatible.  
+A complete walkthrough of this example is available on [YouTube](https://www.youtube.com/watch?v=dhw9rwO7L4k).
 
 Another tutorial example can be found inside the [PendulumExample](PendulumExample) folder.
 The folder includes the Simulink model which is used in the example (version 8.5/ R2015a), a formatted html tutorial page with a sample of what the output should look like, and a MATLAB script with the tutorial.
